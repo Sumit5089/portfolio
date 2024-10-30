@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaEnvelope,
+  FaLinkedin,
 } from "react-icons/fa";
 import "font-awesome/css/font-awesome.min.css";
 
@@ -17,7 +18,7 @@ export default function Home() {
           DevServe
         </h1>
         &nbsp; &nbsp;
-        <div className="flex items-center justify-center gap-10 px-80 py-3 bg-gradient-to-r from-green-100 via-green-500 to-green-700 rounded-full w-100%">
+        <div className="flex items-center justify-center gap-10 px-52 py-3  bg-gradient-to-r from-green-100   via-green-500 to-green-400 rounded-full w-100%">
           <nav className="flex gap-16 text-black font-medium">
             {["Home", "Price", "Contact", "Portfolio"].map((item) => (
               <a
@@ -27,10 +28,12 @@ export default function Home() {
               >
                 {item}
               </a>
+
+              
             ))}
           </nav>
           &nbsp; &nbsp; &nbsp;
-          <button className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-700 hover:scale-105 hover:shadow-xl transition duration-300 transform">
+          <button className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-700 hover:scale-105 hover:shadow-xl transition duration-300  transform ml-auto">
             Demo
           </button>
         </div>
@@ -57,19 +60,47 @@ export default function Home() {
         </div>
 
         {/* Project Inquiry Section */}
-        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
-          <h2 className="text-xl font-semibold text-white mb-4 flex items-center">
-            {/* Copy icon */}
-            Have a project in mind?
-          </h2>
-          <button className="bg-gray-100 text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-300 shadow-md">
-            Copy Email &nbsp; &nbsp;
-            <i className="fa fa-copy mr-2" aria-hidden="true"></i>
-          </button>
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+      
+      {/* "Have a project in mind?" Section */}
+      <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-6 max-w-sm flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
+        <h2 className="text-lg font-semibold text-white mb-4">
+          Have a project in mind?
+        </h2>
+        <button className="bg-gray-100 text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-300 shadow-md flex items-center">
+          <i className="fa fa-copy mr-2" aria-hidden="true"></i> Copy Email
+        </button>
+      </div>
+      
+      {/* Social Media Icons in Vertical Column */}
+      <div className="flex flex-col items-center space-y-4">
+  {/* Top row of icons */}
+  <div className="flex space-x-6">
+    {[FaGithub, FaInstagram, FaFacebookF].map((Icon, idx) => (
+      <Icon
+        key={idx}
+        className="text-white text-5xl from-green-300 via-green-400 to-green-600  hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
+      />
+    ))}
+  </div>
+
+  {/* Bottom row of icons */}
+  <div className="flex space-x-6">
+    {[FaEnvelope, FaTwitter,FaLinkedin].map((Icon, idx) => (
+      <Icon
+        key={idx}
+        className="text-white text-5xl from-green-300 via-green-400 to-green-600  hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
+      />
+        ))}
         </div>
+       
+      </div>
+    </div>
+ 
+        
 
         {/* About Section */}
-        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex items-center justify-center text-center hover:scale-105 transition-transform duration-300 shadow-lg">
+        <div className="flex items-center justify-center bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 w-1/2 max-w-md  text-center hover:scale-105 transition-transform duration-300 shadow-lg">
           <p className="text-lg font-light text-white">
             Passionate about development and offering top-notch services.
           </p>
@@ -88,9 +119,8 @@ export default function Home() {
         {/* Resources Section */}
         <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-between hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
           <h2 className="text-5xl font-bold text-white">Resources</h2>
-          <p className="mt-4 text-sm text-gray-200">
-            All materials and guides in one place. Click below to visit our
-            service page.
+          <p className="mt-4 text-xl text-gray-200">
+           Materials, the complete guide of our services at one place.Click below to redirect to company's service page
           </p>
           <div className="text-white text-3xl mt-4 animate-bounce transition duration-300">
             &#10132;
@@ -146,16 +176,7 @@ export default function Home() {
       </div>
 
       {/* Social Icons Section */}
-      <div className="flex justify-center gap-8 py-10">
-        {[FaGithub, FaInstagram, FaFacebookF, FaEnvelope, FaTwitter].map(
-          (Icon, idx) => (
-            <Icon
-              key={idx}
-              className="text-white text-3xl hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
-            />
-          )
-        )}
-      </div>
+     
     </div>
   );
 }
