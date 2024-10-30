@@ -18,7 +18,7 @@ export default function Home() {
           DevServe
         </h1>
         &nbsp; &nbsp;
-        <div className="flex items-center justify-center gap-10 px-52 py-3  bg-gradient-to-r from-green-100   via-green-500 to-green-400 rounded-full w-100%">
+        <div className="flex items-center justify-center gap-10 px-80 py-3  bg-gradient-to-r from-green-100   via-green-500 to-green-400 rounded-full w-100%">
           <nav className="flex gap-16 text-black font-medium">
             {["Home", "Price", "Contact", "Portfolio"].map((item) => (
               <a
@@ -28,8 +28,6 @@ export default function Home() {
               >
                 {item}
               </a>
-
-              
             ))}
           </nav>
           &nbsp; &nbsp; &nbsp;
@@ -41,8 +39,13 @@ export default function Home() {
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-10">
+<<<<<<< HEAD
         {/* Portfolio Section */}
         <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg  cursor-pointer">
+=======
+        {/* Portfolio Section with increased height */}
+        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
+>>>>>>> 464cd0f2a1d23b5a9577f5276f62744ecd30fbd5
           <div className="text-5xl font-bold text-white text-center">
             <p className="uppercase tracking-wide">Portfolio</p>
           </div>
@@ -50,6 +53,7 @@ export default function Home() {
             &#10132;
           </div>
         </div>
+
 
         {/* Blog Section */}
         <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-between hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
@@ -61,43 +65,39 @@ export default function Home() {
 
         {/* Project Inquiry Section */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-      
-      {/* "Have a project in mind?" Section */}
-      <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-6 max-w-sm flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
-        <h2 className="text-lg font-semibold text-white mb-4">
-          Have a project in mind?
-        </h2>
-        <button className="bg-gray-100 text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-300 shadow-md flex items-center">
-          <i className="fa fa-copy mr-2" aria-hidden="true"></i> Copy Email
-        </button>
-      </div>
-      
-      {/* Social Media Icons in Vertical Column */}
-      <div className="flex flex-col items-center space-y-4">
-  {/* Top row of icons */}
-  <div className="flex space-x-6">
-    {[FaGithub, FaInstagram, FaFacebookF].map((Icon, idx) => (
-      <Icon
-        key={idx}
-        className="text-white text-5xl from-green-300 via-green-400 to-green-600  hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
-      />
-    ))}
-  </div>
+          {/* "Have a project in mind?" Section */}
+          <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-6 max-w-sm flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
+            <h2 className="text-lg font-semibold text-white mb-4">
+              Have a project in mind?
+            </h2>
+            <button className="bg-gray-100 text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-300 shadow-md flex items-center">
+              <i className="fa fa-copy mr-2" aria-hidden="true"></i> Copy Email
+            </button>
+          </div>
 
-  {/* Bottom row of icons */}
-  <div className="flex space-x-6">
-    {[FaEnvelope, FaTwitter,FaLinkedin].map((Icon, idx) => (
-      <Icon
-        key={idx}
-        className="text-white text-5xl from-green-300 via-green-400 to-green-600  hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
-      />
-        ))}
+          {/* Social Media Icons in Vertical Column */}
+          <div className="flex flex-col items-center space-y-4">
+            {/* Top row of icons */}
+            <div className="flex space-x-6">
+              {[FaGithub, FaInstagram, FaFacebookF].map((Icon, idx) => (
+                <Icon
+                  key={idx}
+                  className="text-white text-5xl from-green-300 via-green-400 to-green-600  hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
+                />
+              ))}
+            </div>
+
+            {/* Bottom row of icons */}
+            <div className="flex space-x-6">
+              {[FaEnvelope, FaTwitter, FaLinkedin].map((Icon, idx) => (
+                <Icon
+                  key={idx}
+                  className="text-white text-5xl from-green-300 via-green-400 to-green-600  hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
+                />
+              ))}
+            </div>
+          </div>
         </div>
-       
-      </div>
-    </div>
- 
-        
 
         {/* About Section */}
         <div className="flex items-center justify-center bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 w-1/2 max-w-md  text-center hover:scale-105 transition-transform duration-300 shadow-lg">
@@ -120,7 +120,8 @@ export default function Home() {
         <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-between hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
           <h2 className="text-5xl font-bold text-white">Resources</h2>
           <p className="mt-4 text-xl text-gray-200">
-           Materials, the complete guide of our services at one place.Click below to redirect to company's service page
+            Materials, the complete guide of our services at one place.Click
+            below to redirect to company's service page
           </p>
           <div className="text-white text-3xl mt-4 animate-bounce transition duration-300">
             &#10132;
@@ -145,34 +146,33 @@ export default function Home() {
         </div>
 
         {/* Stack Section */}
-<div className="col-span-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center gap-6 hover:scale-105 transition-transform duration-300 shadow-lg">
-  <h2 className="text-2xl font-semibold mb-6 text-white">
-    Stack we use
-  </h2>
-  <div className="flex gap-6">
-    {[
-      "reactnative.png",
-      "mongodb.png",
-      "figma.png",
-      "nextjs.png",
-      "vercel.png",
-    ].map((icon, idx) => (
-      <div
-        key={idx}
-        className="bg-white p-4 rounded-lg shadow-lg transition-shadow duration-200 hover:shadow-xl flex items-center justify-center"
-      >
-        <Image
-          src={`/images/${icon}`}
-          alt={icon.replace("-icon.png", "")}
-          width={50}
-          height={50}
-          className="hover:scale-125 transition-transform duration-200"
-        />
-      </div>
-    ))}
-  </div>
-</div>
-
+        <div className="col-span-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center gap-6 hover:scale-105 transition-transform duration-300 shadow-lg">
+          <h2 className="text-2xl font-semibold mb-6 text-white">
+            Stack we use
+          </h2>
+          <div className="flex gap-6">
+            {[
+              "reactnative.png",
+              "mongodb.png",
+              "figma.png",
+              "nextjs.png",
+              "vercel.png",
+            ].map((icon, idx) => (
+              <div
+                key={idx}
+                className="bg-white p-4 rounded-lg shadow-lg transition-shadow duration-200 hover:shadow-xl flex items-center justify-center"
+              >
+                <Image
+                  src={`/images/${icon}`}
+                  alt={icon.replace("-icon.png", "")}
+                  width={50}
+                  height={50}
+                  className="hover:scale-125 transition-transform duration-200"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
