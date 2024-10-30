@@ -42,7 +42,7 @@ export default function Home() {
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-10">
         {/* Portfolio Section */}
-        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
+        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg  cursor-pointer">
           <div className="text-5xl font-bold text-white text-center">
             <p className="uppercase tracking-wide">Portfolio</p>
           </div>
@@ -174,9 +174,6 @@ export default function Home() {
 </div>
 
       </div>
-
-      {/* Social Icons Section */}
-     
     </div>
   );
 }
