@@ -104,16 +104,16 @@ export default function Home() {
         <div className="w-full h-1/4  flex items-center justify-center gap-5">
             {/* Email Subscription Section */}
             <div className="col-span-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center transition-transform transform hover:scale-105 shadow-lg h-44 -my-16 w-1/2">
-            <p className="text-2xl font-semibold mb-6 text-white text-center">
+            <p className="text-1xl font-semibold mb-6 text-white text-center">
               Get design tips & guidelines in your inbox directly
             </p>
             <div className="flex w-full max-w-md">
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="bg-white text-black px-4 py-2 rounded-l-lg w-full focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200"
+                className="bg-white text-black px-4 py-2 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200"
               />
-              <button className="bg-gradient-to-r from-green-700 to-green-900 text-white px-6 py-3 rounded-r-lg font-semibold transition-transform transform hover:scale-105 shadow-md">
+              <button className="bg-white  text-black px-6 py-3 rounded-lg font-semibold transition-transform transform hover:scale-105 shadow-md mx-4">
                 Request
               </button>
             </div>
@@ -139,8 +139,8 @@ export default function Home() {
                   <Image
                     src={`/images/${icon}`}
                     alt={icon.replace("-icon.png", "")}
-                    width={50}
-                    height={50}
+                    width={30}
+                    height={30}
                     className="hover:scale-125 transition-transform duration-200"
                   />
                 </div>
@@ -152,9 +152,9 @@ export default function Home() {
 
         {/* DIV 2 */}
         <div className="flex flex-col  w-1/4  h-full items-center justify-between p-2">
-          <div className="flex flex-col items-center  w-full h-1/4 ">
+          <div className="flex flex-col items-center  w-full h-1/4">
             {/* Top row of icons */}
-            <div className="flex  ">
+            <div className="flex  space-x-6 mb-8">
               {[FaGithub, FaInstagram, FaFacebookF].map((Icon, idx) => (
                 <Icon
                   key={idx}
