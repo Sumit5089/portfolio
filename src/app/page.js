@@ -13,12 +13,11 @@ export default function Home() {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-black min-h-screen text-white font-sans">
       {/* Navbar */}
-      <header className="flex items-center justify-between px-8 py-4 shadow-lg border-b border-gray-800 mx-8 mt-4">
-        <h1 className="text-3xl font-bold mr-4 bg-gradient-to-r from-green-200 via-green-500 to-green-600 bg-clip-text text-transparent">
+      <header className="flex   items-center justify-between  px-8 py-4 shadow-lg border-b border-gray-800 mx-8 mt-4">
+        <h1 className=" text-3xl font-bold mr-4 bg-gradient-to-r from-green-200 via-green-500 to-green-600 bg-clip-text text-transparent">
           DevServe
         </h1>
-        &nbsp; &nbsp;
-        <div className="flex items-center justify-center gap-10 px-80 py-3  bg-gradient-to-r from-green-100   via-green-500 to-green-400 rounded-full w-100%">
+        <div className="flex items-center justify-center gap-10 px-60 py-3 bg-gradient-to-r from-green-100 via-green-500 to-green-400 rounded-full w-100%">
           <nav className="flex gap-16 text-black font-medium">
             {["Home", "Price", "Contact", "Portfolio"].map((item) => (
               <a
@@ -30,22 +29,16 @@ export default function Home() {
               </a>
             ))}
           </nav>
-          &nbsp; &nbsp; &nbsp;
-          <button className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-700 hover:scale-105 hover:shadow-xl transition duration-300  transform ml-auto">
+          <button className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-700 hover:scale-105 hover:shadow-xl transition duration-300 transform ml-auto">
             Demo
           </button>
         </div>
       </header>
 
       {/* Main Content Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-10">
-<<<<<<< HEAD
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 p-8">
         {/* Portfolio Section */}
-        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg  cursor-pointer">
-=======
-        {/* Portfolio Section with increased height */}
-        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
->>>>>>> 464cd0f2a1d23b5a9577f5276f62744ecd30fbd5
+        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-12 h-96 w-96 flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
           <div className="text-5xl font-bold text-white text-center">
             <p className="uppercase tracking-wide">Portfolio</p>
           </div>
@@ -53,10 +46,8 @@ export default function Home() {
             &#10132;
           </div>
         </div>
-
-
         {/* Blog Section */}
-        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-between hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
+        <div className="bg-gradient-to-r  from-green-300 via-green-400 to-green-600 rounded-2xl p-10 h-36  flex flex-col justify-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
           <h2 className="text-5xl font-bold text-white">Blog</h2>
           <div className="text-white text-3xl mt-4 animate-bounce transition duration-300">
             &#10132;
@@ -64,9 +55,9 @@ export default function Home() {
         </div>
 
         {/* Project Inquiry Section */}
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
           {/* "Have a project in mind?" Section */}
-          <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-6 max-w-sm flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
+          <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-6 h-36 max-w-sm flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
             <h2 className="text-lg font-semibold text-white mb-4">
               Have a project in mind?
             </h2>
@@ -82,7 +73,7 @@ export default function Home() {
               {[FaGithub, FaInstagram, FaFacebookF].map((Icon, idx) => (
                 <Icon
                   key={idx}
-                  className="text-white text-5xl from-green-300 via-green-400 to-green-600  hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
+                  className="text-white text-5xl hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
                 />
               ))}
             </div>
@@ -92,7 +83,7 @@ export default function Home() {
               {[FaEnvelope, FaTwitter, FaLinkedin].map((Icon, idx) => (
                 <Icon
                   key={idx}
-                  className="text-white text-5xl from-green-300 via-green-400 to-green-600  hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
+                  className="text-white text-5xl hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
                 />
               ))}
             </div>
@@ -100,14 +91,14 @@ export default function Home() {
         </div>
 
         {/* About Section */}
-        <div className="flex items-center justify-center bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 w-1/2 max-w-md  text-center hover:scale-105 transition-transform duration-300 shadow-lg">
+        <div className="flex items-center justify-center bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-5 w-44 h-44 text-center hover:scale-105 transition-transform duration-300 shadow-lg -my-56 mx-96 ">
           <p className="text-lg font-light text-white">
             Passionate about development and offering top-notch services.
           </p>
         </div>
 
         {/* Image Section */}
-        <div className="relative rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden">
+        <div className="relative rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden w-96 h-48  -my-60 mx-44">
           <Image
             src="/images/iphone2.jpeg"
             alt="iPhone"
@@ -117,11 +108,11 @@ export default function Home() {
         </div>
 
         {/* Resources Section */}
-        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-between hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer">
+        <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-between h-auto w-96 hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer mx-8 -my-60">
           <h2 className="text-5xl font-bold text-white">Resources</h2>
           <p className="mt-4 text-xl text-gray-200">
-            Materials, the complete guide of our services at one place.Click
-            below to redirect to company's service page
+            Materials, the complete guide of our services at one place. Click
+            below to redirect to the company's service page.
           </p>
           <div className="text-white text-3xl mt-4 animate-bounce transition duration-300">
             &#10132;
@@ -129,15 +120,15 @@ export default function Home() {
         </div>
 
         {/* Email Subscription Section */}
-        <div className="col-span-2 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center transition-transform transform hover:scale-105 shadow-lg">
+        <div className="col-span-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center transition-transform transform hover:scale-105 shadow-lg h-64 -my-16">
           <p className="text-2xl font-semibold mb-6 text-white text-center">
-            Get design tips & guidlines in your inbox directly
+            Get design tips & guidelines in your inbox directly
           </p>
           <div className="flex w-full max-w-md">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="bg-white text-black px-5 py-3 rounded-l-lg w-full focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200"
+              className="bg-white text-black px-4 py-2 rounded-l-lg w-full focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200"
             />
             <button className="bg-gradient-to-r from-green-700 to-green-900 text-white px-6 py-3 rounded-r-lg font-semibold transition-transform transform hover:scale-105 shadow-md">
               Request
@@ -146,8 +137,8 @@ export default function Home() {
         </div>
 
         {/* Stack Section */}
-        <div className="col-span-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center gap-6 hover:scale-105 transition-transform duration-300 shadow-lg">
-          <h2 className="text-2xl font-semibold mb-6 text-white">
+        <div className="col-span-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center gap-6 hover:scale-105 transition-transform duration-300 shadow-lg h-64 -my-16">
+          <h2 className="text-2xl font-semibold mb-1 text-white">
             Stack we use
           </h2>
           <div className="flex gap-6">
@@ -174,6 +165,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Social Icons Section */}
     </div>
   );
 }
