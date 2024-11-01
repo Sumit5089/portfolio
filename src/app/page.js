@@ -14,11 +14,11 @@ export default function Home() {
     <div className="bg-gradient-to-b from-gray-900 to-black h-[100vh] text-white font-sans">
       {/* Navbar */}
       <header className="flex items-center justify-between px-8 py-2 shadow-lg border-b border-gray-800 mx-8 h-[10vh]">
-        <h1 className="text-3xl font-bold mr-4 bg-gradient-to-r from-green-200 via-green-500 to-green-600 bg-clip-text text-transparent">
+        <h1 className="text-3xl font-bold mr-4 bg-gradient-to-r from-[#9BE15D] to-[#00E3AE] bg-clip-text text-transparent">
           DevServe
         </h1>
-        <div className="flex items-center justify-center gap-10 px-80 py-3 bg-gradient-to-r from-green-100 via-green-500 to-green-400 rounded-full w-100%">
-          <nav className="flex gap-16 text-black font-medium">
+        <div className="flex items-center justify-center gap-24 px-80 py-2 bg-gradient-to-r from-green-100 via-green-500 to-green-800 rounded-full w-100%">
+          <nav className="flex gap-16 text-black font-medium font-bold">
             {["Home", "Price", "Contact", "Portfolio"].map((item) => (
               <a
                 href="#"
@@ -29,7 +29,7 @@ export default function Home() {
               </a>
             ))}
           </nav>
-          <button className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-700 hover:scale-105 hover:shadow-xl transition duration-300 transform ml-auto">
+          <button className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-700 hover:scale-105 hover:shadow-xl transition duration-300 transform ml-14">
             Demo
           </button>
         </div>
@@ -42,16 +42,22 @@ export default function Home() {
           <div className="w-full  h-3/4 flex items-center gap-3">
             {/* PORFOLIO SECTION */}
             <div className="w-2/5 h-full">
-              <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-12 w-full h-full flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer relative">
-                <div className="text-5xl font-bold text-white text-center">
-                  <p className="uppercase tracking-wide">Portfolio</p>
-                  <p className="uppercase text-4xl tracking-wide mt-2">
+              <div className="bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-12 w-full h-full flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer relative">
+                <div className="text-5xl font-bold text-white text-center mb-16">
+                  <p className=" tracking-wide">Portfolio</p>
+                  <p className="text-4xl tracking-wide mt-2">
                     Portfolio
                   </p>
-                  <p className="uppercase text-2xl tracking-wide mt-2">
+                  <p className="text-2xl tracking-wide mt-2">
                     Portfolio
                   </p>
-                  <p className="uppercase text-lg tracking-wide mt-2">
+                  <p className=" text-lg tracking-wide mt-2">
+                    Portfolio
+                  </p>
+                  <p className=" text-sm tracking-wide mt-2">
+                    Portfolio
+                  </p>
+                  <p className=" text-xs tracking-wide mt-2">
                     Portfolio
                   </p>
                 </div>
@@ -68,8 +74,8 @@ export default function Home() {
             {/* BLOG WALA SECTION */}
             <div className="w-3/5 h-full flex flex-col items-center gap-3">
               <div className="flex items-center justify-between w-full h-1/3 gap-3">
-                <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-center transition-transform duration-300 shadow-lg cursor-pointer w-2/3 h-full relative">
-                  <h2 className="text-5xl font-bold text-white">Blog</h2>
+                <div className="bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-10 flex flex-col justify-center transition-transform hover:scale-105 duration-300 shadow-lg cursor-pointer w-2/3 h-full relative">
+                  <h2 className="text-5xl font-bold text-white">Blog...</h2>
                   <div className="absolute bottom-4 right-4 animate-bounce">
                     <img
                       src="/images/circle-arrows.png"
@@ -82,8 +88,8 @@ export default function Home() {
                 {/* Project Inquiry Section */}
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-10 w-1/3 h-full">
                   {/* "Have a project in mind?" Section */}
-                  <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-6 h-full w-full flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer ">
-                    <h2 className="text-lg font-semibold text-white mb-4">
+                  <div className="bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-6 h-full w-full flex flex-col items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer ">
+                    <h2 className="text-base font-semibold text-white mb-4">
                       Have a project in mind?
                     </h2>
                     <button className="bg-gray-100 text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-300 shadow-md flex items-center">
@@ -97,7 +103,7 @@ export default function Home() {
               </div>
               <div className="flex w-full h-2/3 items-center gap-3 ">
                 {/* About Section */}
-                <div className="flex items-center justify-center bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10  text-center hover:scale-105 transition-transform duration-300 shadow-lg w-1/3 h-full">
+                <div className="flex items-center justify-center bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-10  text-center hover:scale-105 transition-transform duration-300 shadow-lg w-1/3 h-full">
                   <p className="text-lg font-light text-white">
                     Passionate about development and offering top-notch
                     services.
@@ -107,7 +113,7 @@ export default function Home() {
                 {/* Image Section */}
                 <div className="relative rounded-2xl hover:scale-105 transition-transform duration-300 shadow-lg overflow-hidden w-2/3 h-full ">
                   <Image
-                    src="/images/iphone2.jpeg"
+                    src="/images/iphonee.jpg"
                     alt="iPhone"
                     layout="fill" // Use layout="fill" to cover the div
                     className="object-cover" // Make the image cover the entire div
@@ -118,7 +124,7 @@ export default function Home() {
           </div>
           <div className="w-full h-1/4  flex items-center justify-center gap-5">
             {/* Email Subscription Section */}
-            <div className="col-span-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center transition-transform transform hover:scale-105 shadow-lg h-44 -my-16 w-1/2">
+            <div className="col-span-1 bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-10 flex flex-col items-center transition-transform transform hover:scale-105 shadow-lg h-44 -my-16 w-1/2">
               <p className="text-1xl font-semibold mb-6 text-white text-center">
                 Get design tips & guidelines in your inbox directly
               </p>
@@ -135,7 +141,7 @@ export default function Home() {
             </div>
 
             {/* Stack Section */}
-            <div className="col-span-1 bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col items-center gap-6 hover:scale-105 transition-transform duration-300 shadow-lg h-44 -my-16 w-1/2">
+            <div className="col-span-1 bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-10 flex flex-col items-center gap-6 hover:scale-105 transition-transform duration-300 shadow-lg h-44 -my-16 w-1/2">
               <h2 className="text-2xl font-semibold mb-1 text-white">
                 Stack we use
               </h2>
@@ -169,7 +175,7 @@ export default function Home() {
         <div className="flex flex-col  w-1/4  h-full items-center justify-between p-2">
           <div className="flex flex-col items-center  w-full h-1/4">
             {/* Top row of icons */}
-            <div className="flex  space-x-6 mb-8">
+            <div className="flex  space-x-12 mb-8">
               {[FaGithub, FaInstagram, FaFacebookF].map((Icon, idx) => (
                 <Icon
                   key={idx}
@@ -179,7 +185,7 @@ export default function Home() {
             </div>
 
             {/* Bottom row of icons */}
-            <div className="flex space-x-6">
+            <div className="flex space-x-12">
               {[FaEnvelope, FaTwitter, FaLinkedin].map((Icon, idx) => (
                 <Icon
                   key={idx}
@@ -189,9 +195,11 @@ export default function Home() {
             </div>
           </div>
           {/* Resources Section */}
-          <div className="bg-gradient-to-r from-green-300 via-green-400 to-green-600 rounded-2xl p-10 flex flex-col justify-between transition-transform duration-300 shadow-lg cursor-pointer mx-8 w-full h-3/4 relative">
-            <h2 className="text-5xl font-bold text-white">Resources</h2>
-            <p className="mt-4 text-xl text-gray-200">
+          <div className="bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-10 flex flex-col justify-between transition-transform hover:scale-105 duration-300 shadow-lg cursor-pointer  w-full h-3/4 relative">
+            <h2 className="text-5xl font-bold text-white absolute top-1/2 transform -rotate-90 -translate-y-1/2 -left-14">
+              Resources
+            </h2>
+            <p className="mt-24 text-xl text-gray-200 ml-20">
               Materials, the complete guide of our services at one place. Click
               below to redirect to the company's service page.
             </p>
