@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {
-  FaGithub,
+  FaYoutube,
   FaFacebookF,
   FaInstagram,
   FaEnvelope,
@@ -163,13 +163,19 @@ export default function Home() {
 
         {/* DIV 2 */}
         <div className="flex flex-col  w-1/4  h-full items-center justify-between p-2">
-          <div className="flex flex-col items-center  w-full h-1/4">
+          <div className="flex flex-col items-center w-full h-1/4">
             {/* Top row of icons */}
-            <div className="flex  space-x-12 mb-8">
-              {[FaGithub, FaInstagram, FaFacebookF].map((Icon, idx) => (
+            <div className="flex space-x-12 mb-8">
+              {[FaYoutube, FaInstagram, FaFacebookF].map((Icon, idx) => (
                 <Icon
                   key={idx}
-                  className="text-white text-5xl hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
+                  className={`text-white text-5xl transition-colors duration-300 transform hover:scale-110 cursor-pointer ${
+                    idx === 0
+                      ? "hover:text-red-600"
+                      : idx === 1
+                      ? "hover:text-pink-500"
+                      : "hover:text-blue-600"
+                  }`}
                 />
               ))}
             </div>
@@ -179,11 +185,18 @@ export default function Home() {
               {[FaEnvelope, FaSquareXTwitter, FaLinkedin].map((Icon, idx) => (
                 <Icon
                   key={idx}
-                  className="text-white text-5xl hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
+                  className={`text-white text-5xl transition-colors duration-300 transform hover:scale-110 cursor-pointer ${
+                    idx === 0
+                      ? "hover:text-white-300"
+                      : idx === 1
+                      ? "hover:text-gray-400"
+                      : "hover:text-blue-700"
+                  }`}
                 />
               ))}
             </div>
           </div>
+
           {/* Resources Section */}
           <div className="bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-10 flex flex-col justify-between transition-transform hover:scale-105 duration-300 shadow-lg cursor-pointer  w-full h-3/4 relative">
             <h2 className="text-5xl font-bold text-white absolute top-1/2 transform -rotate-90 -translate-y-1/2 -left-14">
