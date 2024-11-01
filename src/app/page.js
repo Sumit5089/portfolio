@@ -3,10 +3,10 @@ import {
   FaGithub,
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
   FaEnvelope,
   FaLinkedin,
 } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import "font-awesome/css/font-awesome.min.css";
 
 export default function Home() {
@@ -17,8 +17,8 @@ export default function Home() {
         <h1 className="text-3xl font-bold mr-4 bg-gradient-to-r from-[#9BE15D] to-[#00E3AE] bg-clip-text text-transparent">
           DevServe
         </h1>
-        <div className="flex items-center justify-center gap-24 px-80 py-2 bg-gradient-to-r from-green-100 via-green-500 to-green-800 rounded-full w-100%">
-          <nav className="flex gap-16 text-black font-medium font-bold">
+        <div className="flex items-center justify-center gap-12 px-32 py-2 bg-gradient-to-r from-green-100 via-green-500 to-green-800 rounded-full w-[80%] mx-auto">
+          <nav className="flex gap-20 text-black font-medium font-bold">
             {["Home", "Price", "Contact", "Portfolio"].map((item) => (
               <a
                 href="#"
@@ -29,7 +29,7 @@ export default function Home() {
               </a>
             ))}
           </nav>
-          <button className="bg-black text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-700 hover:scale-105 hover:shadow-xl transition duration-300 transform ml-14">
+          <button className="bg-black text-white px-4 py-2 rounded-full font-semibold shadow-lg hover:bg-gray-700 hover:scale-105 hover:shadow-xl transition duration-300 transform ml-52">
             Demo
           </button>
         </div>
@@ -45,21 +45,11 @@ export default function Home() {
               <div className="bg-gradient-to-r from-[#0BA360] to-[#3CBA92] rounded-2xl p-12 w-full h-full flex flex-col justify-center items-center hover:scale-105 transition-transform duration-300 shadow-lg cursor-pointer relative">
                 <div className="text-5xl font-bold text-white text-center mb-16">
                   <p className=" tracking-wide">Portfolio</p>
-                  <p className="text-4xl tracking-wide mt-2">
-                    Portfolio
-                  </p>
-                  <p className="text-2xl tracking-wide mt-2">
-                    Portfolio
-                  </p>
-                  <p className=" text-lg tracking-wide mt-2">
-                    Portfolio
-                  </p>
-                  <p className=" text-sm tracking-wide mt-2">
-                    Portfolio
-                  </p>
-                  <p className=" text-xs tracking-wide mt-2">
-                    Portfolio
-                  </p>
+                  <p className="text-4xl tracking-wide mt-2">Portfolio</p>
+                  <p className="text-2xl tracking-wide mt-2">Portfolio</p>
+                  <p className=" text-lg tracking-wide mt-2">Portfolio</p>
+                  <p className=" text-sm tracking-wide mt-2">Portfolio</p>
+                  <p className=" text-xs tracking-wide mt-2">Portfolio</p>
                 </div>
                 <div className="absolute bottom-4 right-4 animate-bounce transition duration-300">
                   <img
@@ -186,7 +176,7 @@ export default function Home() {
 
             {/* Bottom row of icons */}
             <div className="flex space-x-12">
-              {[FaEnvelope, FaTwitter, FaLinkedin].map((Icon, idx) => (
+              {[FaEnvelope, FaSquareXTwitter, FaLinkedin].map((Icon, idx) => (
                 <Icon
                   key={idx}
                   className="text-white text-5xl hover:text-green-300 transition-colors duration-300 transform hover:scale-110 cursor-pointer"
@@ -213,8 +203,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* DIV 2 */}
     </div>
   );
 }
