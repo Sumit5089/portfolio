@@ -14,6 +14,11 @@ export default function Home() {
     <div className="bg-gradient-to-b from-gray-900 to-black h-[100vh] text-white font-sans">
       {/* Navbar */}
       <header className="flex items-center justify-between px-8 py-2 shadow-lg border-b border-gray-800 mx-8 h-[10vh]">
+        <img
+          src="/images/devserve_logo.jfif"
+          alt="logo"
+          className="w-8 h-8 mr-2"
+        />
         <h1 className="text-3xl font-bold mr-4 bg-gradient-to-r from-[#9BE15D] to-[#00E3AE] bg-clip-text text-transparent">
           DevServe
         </h1>
@@ -162,37 +167,69 @@ export default function Home() {
         </div>
 
         {/* DIV 2 */}
-        <div className="flex flex-col  w-1/4  h-full items-center justify-between p-2">
+        <div className="flex flex-col w-1/4 h-full items-center justify-between p-2">
           <div className="flex flex-col items-center w-full h-1/4">
             {/* Top row of icons */}
             <div className="flex space-x-12 mb-8">
-              {[FaYoutube, FaInstagram, FaFacebookF].map((Icon, idx) => (
-                <Icon
+              {[
+                {
+                  Icon: FaYoutube,
+                  link: "https://youtube.com/@devserve-e1x?si=UIYLSwpP8TZKQYk4",
+                  color: "hover:text-red-600",
+                },
+                {
+                  Icon: FaInstagram,
+                  link: "https://www.instagram.com/dev.serve/profilecard/?igsh=d3FxdnVyMHd4bjh6",
+                  color: "hover:text-pink-500",
+                },
+                {
+                  Icon: FaFacebookF,
+                  link: "https://www.facebook.com",
+                  color: "hover:text-blue-600",
+                },
+              ].map(({ Icon, link, color }, idx) => (
+                <a
+                  href={link}
                   key={idx}
-                  className={`text-white text-5xl transition-colors duration-300 transform hover:scale-110 cursor-pointer ${
-                    idx === 0
-                      ? "hover:text-red-600"
-                      : idx === 1
-                      ? "hover:text-pink-500"
-                      : "hover:text-blue-600"
-                  }`}
-                />
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon
+                    className={`text-white text-5xl transition-colors duration-300 transform hover:scale-110 cursor-pointer ${color}`}
+                  />
+                </a>
               ))}
             </div>
 
             {/* Bottom row of icons */}
             <div className="flex space-x-12">
-              {[FaEnvelope, FaSquareXTwitter, FaLinkedin].map((Icon, idx) => (
-                <Icon
+              {[
+                {
+                  Icon: FaEnvelope,
+                  link: "mailto:devserve.co@gmail.com",
+                  color: "hover:text-gray-300",
+                },
+                {
+                  Icon: FaSquareXTwitter,
+                  link: "https://x.com/DevServe_2024?t=s-RyFCD-8D2ceFwvcJ_Uug&s=09",
+                  color: "hover:text-gray-400",
+                },
+                {
+                  Icon: FaLinkedin,
+                  link: "https://www.linkedin.com/in/dev-serve-05a079331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                  color: "hover:text-blue-700",
+                },
+              ].map(({ Icon, link, color }, idx) => (
+                <a
+                  href={link}
                   key={idx}
-                  className={`text-white text-5xl transition-colors duration-300 transform hover:scale-110 cursor-pointer ${
-                    idx === 0
-                      ? "hover:text-white-300"
-                      : idx === 1
-                      ? "hover:text-gray-400"
-                      : "hover:text-blue-700"
-                  }`}
-                />
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon
+                    className={`text-white text-5xl transition-colors duration-300 transform hover:scale-110 cursor-pointer ${color}`}
+                  />
+                </a>
               ))}
             </div>
           </div>
