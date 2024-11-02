@@ -23,7 +23,7 @@ export default function Home() {
           DevServe
         </h1>
         <div className="flex items-center justify-center gap-12 px-32 py-2 bg-gradient-to-r from-green-100 via-green-500 to-green-800 rounded-full w-[80%] mx-auto">
-          <nav className="flex gap-20 text-black font-medium font-bold">
+          <nav className="flex gap-20 text-black  font-bold">
             {["Home", "Price", "Contact", "Portfolio"].map((item) => (
               <a
                 href="#"
